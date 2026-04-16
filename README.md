@@ -1,6 +1,42 @@
-# UpdateAngular
+# UpdateAngular — Repo de pruebas
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.7.
+Este repositorio es un entorno de pruebas y experimentación. Está diseñado para:
+
+- Testear nuevas funcionalidades y actualizaciones de Angular.
+- Validar configuraciones o dependencias.
+- Servir como boilerplate o punto de partida en pruebas futuras.
+
+No está pensado para producción.
+
+Requisitos mínimos
+- Node.js (recomendado v18+)
+- npm
+
+Instalación
+```bash
+npm install
+```
+
+Desarrollo (levantar servidor)
+```bash
+npm start
+# ó
+ng serve
+```
+
+Tests
+```bash
+npm test
+```
+
+Build
+```bash
+npm run build
+```
+
+Notas
+- Este README es intencionalmente minimalista: contiene solo lo necesario para ejecutar y probar la app.
+- Para más detalles sobre la estructura, revisa los archivos en `src/`.
 
 ## Development server
 

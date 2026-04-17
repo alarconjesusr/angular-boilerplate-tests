@@ -1,0 +1,21 @@
+<div class="bg-white p-6 border border-gray-300 rounded">
+  <header class="flex gap-4" [ngClass]="{ 'flex-row-reverse': player()!.side === 'right' }">
+    <img
+      src="https://cdn.iconscout.com/icon/free/png-256/free-avatar-icon-svg-download-png-456322.png"
+      alt=""
+      class="w-20"
+    />
+    <div>
+      <h2 class="text-xl font-semibold">{{ player()!.name }}</h2>
+      <p class="text-sm text-gray-500">{{ player()!.title }}</p>
+    </div>
+  </header>
+
+  <section class="border p-2 border-gray-300 rounded mt-4">
+    <h3 class="text-lg font-semibold mt-4">About Me</h3>
+    <p class="text-gray-700 mt-2">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+      labore et dolore magna aliqua.
+    </p>
+  </section>
+</div>

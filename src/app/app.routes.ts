@@ -14,4 +14,8 @@ export const routes: Routes = [
         path: 'grid',
         loadComponent: () => import('./grid/grid.component').then(m => m.GridComponent),
     },
+    {
+        path: 'player',
+        loadComponent: () => import('./player/player.component').then(m => m.PlayerComponent),
+    },
 ];

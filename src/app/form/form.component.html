@@ -25,8 +25,11 @@
           id="email"
           [formField]="form.email"
         />
-        @if (form.email().invalid() && form.email().touched()) {
-          @for (item of form.email().errors(); track $index) {
+
+        @let email = form.email();
+
+        @if (email.invalid() && email.touched()) {
+          @for (item of email.errors(); track $index) {
             <p class="text-red-500 text-xs">{{ item.message }}</p>
           }
         }
@@ -39,8 +42,9 @@
           id="message"
           [formField]="form.description"
         ></textarea>
-        @if (form.description().invalid() && form.description().touched()) {
-          @for (item of form.description().errors(); track $index) {
+        @let description = form.description();
+        @if (description.invalid() && description.touched()) {
+          @for (item of description.errors(); track $index) {
             <p class="text-red-500 text-xs">{{ item.message }}</p>
           }
         }

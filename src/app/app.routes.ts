@@ -10,4 +10,8 @@ export const routes: Routes = [
 		path: 'form',
 		loadComponent: () => import('./form/form.component').then(m => m.FormComponent),
 	},
+    {
+        path: 'grid',
+        loadComponent: () => import('./grid/grid.component').then(m => m.GridComponent),
+    },
 ];

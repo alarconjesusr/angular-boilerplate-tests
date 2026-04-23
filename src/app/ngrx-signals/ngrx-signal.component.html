@@ -1,0 +1,21 @@
+<h1>Ngrx Signal Component</h1>
+
+<p>This component demonstrates the use of Ngrx Signals in an Angular application.</p>
+
+
+@for (post of postStore.posts(); track $index) {
+    <div>{{ post.title }}</div>
+}
+
+<p>Numero de posts: {{ postStore.postCount() }}</p>
+<p>Pagination: {{ postStore.filter() | json }}</p>
+
+
+
+<button class="bg-green-400 p-3 rounded-md text-white"
+(click)="postStore.addPost({ id: postStore.posts().length + 1, title: `Post ${postStore.posts().length + 1}` })">Agregar un nuevo post</button>
+
+
+
+<button class="bg-purple-400 p-3 rounded-md text-white"
+(click)="postStore.getPosts()">Cargar posts RxJS</button>

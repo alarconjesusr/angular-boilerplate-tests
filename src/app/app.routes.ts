@@ -18,4 +18,8 @@ export const routes: Routes = [
         path: 'player',
         loadComponent: () => import('./player/player.component').then(m => m.PlayerComponent),
     },
+    {
+        path: 'ngrx-signal',
+        loadComponent: () => import('./ngrx-signals/ngrx-signal.component').then(m => m.NgrxSignalComponent),
+    },
 ];

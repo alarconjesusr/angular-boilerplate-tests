@@ -22,4 +22,8 @@ export const routes: Routes = [
         path: 'ngrx-signal',
         loadComponent: () => import('./ngrx-signals/ngrx-signal.component').then(m => m.NgrxSignalComponent),
     },
+    {
+        path: 'http-resource',
+        loadComponent: () => import('./examples/http-resource/http-resource.component').then(m => m.HttpResourceComponent),
+    },
 ];

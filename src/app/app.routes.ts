@@ -1,4 +1,5 @@
 import { Routes } from '@angular/router';
+import { chatsRoute } from './landings/pinterest-ideas/chats/chats.route';
 
 export const routes: Routes = [
   {
@@ -63,6 +64,7 @@ export const routes: Routes = [
           },
         ],
       },
+      chatsRoute
     ],
   },
 ];

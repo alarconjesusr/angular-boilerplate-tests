@@ -54,6 +54,13 @@ export const routes: Routes = [
                 (m) => m.LifestyleComponent,
               ),
           },
+          {
+            path: 'rexfit',
+            loadComponent: () =>
+              import('./landings/pinterest-ideas/grids/rexfit/rexfit.component').then(
+                (m) => m.RexfitComponent,
+              ),
+          },
         ],
       },
     ],

@@ -64,7 +64,19 @@ export const routes: Routes = [
           },
         ],
       },
-      chatsRoute
+      chatsRoute,
+      {
+        path: 'home',
+        children: [
+          {
+            path: 'homely',
+            loadComponent: () =>
+              import('./landings/pinterest-ideas/home/homely/homely.component').then(
+                (m) => m.HomelyComponent,
+              ),
+          },
+        ],
+      },
     ],
   },
 ];

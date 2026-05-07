@@ -36,6 +36,13 @@ export const routes: Routes = [
     loadComponent: () => import('./landings/nft/nft-component').then((m) => m.NftComponent),
   },
   {
+    path: 'idealo-creativo',
+    loadComponent: () =>
+      import('./landings/idealocreativo/idealo-creativo.component').then(
+        (m) => m.IdealoCreativoComponent,
+      ),
+  },
+  {
     path: 'pinterest',
     children: [
       {
@@ -76,7 +83,7 @@ export const routes: Routes = [
               ),
           },
         ],
-      },
+      }
     ],
   },
 ];
